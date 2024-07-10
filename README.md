@@ -56,8 +56,6 @@ Execute o comando abaixo para compilar seus assets JavaScript e CSS:
 npm run dev
 ```
 
-Este comando é necessário se o seu projeto Laravel utiliza Laravel Mix para compilar assets.
-
 ### 6. Iniciar o Servidor de Desenvolvimento
 
 Para iniciar um servidor de desenvolvimento local, execute o seguinte comando:
