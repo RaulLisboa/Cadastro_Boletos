@@ -1,5 +1,3 @@
-Você está correto, normalmente, após instalar as dependências do PHP com o Composer e configurar o ambiente `.env`, pode ser necessário executar `npm run dev` ou `npm run prod` para compilar assets JavaScript e CSS, dependendo das necessidades do projeto. Aqui está o guia atualizado incluindo essa etapa:
-
 ```markdown
 # Projeto Laravel - Guia de Início Rápido
 
