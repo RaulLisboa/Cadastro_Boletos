@@ -1,4 +1,4 @@
-```markdown
+
 # Projeto Laravel - Guia de Início Rápido
 
 Este é um guia passo a passo para iniciar e configurar um projeto Laravel baixado do Git.
@@ -18,7 +18,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 
 No diretório do projeto, execute o seguinte comando para instalar as dependências PHP do Laravel (gerenciadas pelo Composer):
 
-```bash
+```
 composer install
 ```
 
@@ -26,13 +26,13 @@ composer install
 
 Faça uma cópia do arquivo `.env.example` e renomeie-a para `.env`. Este arquivo contém as configurações de ambiente do seu projeto. Você pode configurar aqui seu banco de dados, cache, e-mail, etc.:
 
-```bash
+```
 cp .env.example .env
 ```
 
 Após isso, gere uma nova chave de aplicativo Laravel:
 
-```bash
+```
 php artisan key:generate
 ```
 
@@ -44,7 +44,7 @@ Configure as credenciais do seu banco de dados no arquivo `.env`.
 
 Se o projeto Laravel utiliza migrações para criar tabelas no banco de dados, execute o seguinte comando para migrar o banco de dados:
 
-```bash
+```
 php artisan migrate
 ```
 
@@ -52,7 +52,7 @@ php artisan migrate
 
 Execute o comando abaixo para compilar seus assets JavaScript e CSS:
 
-```bash
+```
 npm run dev
 ```
 
@@ -62,7 +62,7 @@ Este comando é necessário se o seu projeto Laravel utiliza Laravel Mix para co
 
 Para iniciar um servidor de desenvolvimento local, execute o seguinte comando:
 
-```bash
+```
 php artisan serve
 ```
 
