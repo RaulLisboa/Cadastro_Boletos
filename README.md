@@ -6,59 +6,65 @@ Este é um guia passo a passo para iniciar e configurar um projeto Laravel baixa
 
 Antes de começar, certifique-se de ter instalado em sua máquina:
 
-- PHP (versão recomendada)
-- Composer
-- Node.js e npm (opcional, dependendo das necessidades do projeto)
-- Um servidor web (como Apache ou Nginx) configurado localmente (opcional para desenvolvimento com `php artisan serve`)
+1. PHP (versão recomendada)
+2. Composer
+3. Node.js e npm (opcional, dependendo das necessidades do projeto)
+4. Um servidor web (como Apache ou Nginx) configurado localmente (opcional para desenvolvimento com `php artisan serve`)
 
 ## Passos para Iniciar o Projeto
 
-1. **Instalação das Dependências PHP**
+### 1. Instalação das Dependências PHP
 
-   No diretório do projeto, execute o seguinte comando para instalar as dependências PHP do Laravel (gerenciadas pelo Composer):
+No diretório do projeto, execute o seguinte comando para instalar as dependências PHP do Laravel (gerenciadas pelo Composer):
 
-   
-   composer install
-Configuração do Arquivo de Ambiente
+```
+composer install
+```
 
-Faça uma cópia do arquivo .env.example e renomeie-a para .env. Este arquivo contém as configurações de ambiente do seu projeto. Você pode configurar aqui seu banco de dados, cache, e-mail, etc.:
+### 2. Configuração do Arquivo de Ambiente
 
+Faça uma cópia do arquivo `.env.example` e renomeie-a para `.env`. Este arquivo contém as configurações de ambiente do seu projeto. Você pode configurar aqui seu banco de dados, cache, e-mail, etc.:
 
-Copiar código
+```
 cp .env.example .env
+```
+
 Após isso, gere uma nova chave de aplicativo Laravel:
 
-
-Copiar código
+```
 php artisan key:generate
-Configuração do Banco de Dados
+```
 
-Configure as credenciais do seu banco de dados no arquivo .env.
+### 3. Configuração do Banco de Dados
 
-Executar as Migrações do Banco de Dados (se necessário)
+Configure as credenciais do seu banco de dados no arquivo `.env`.
 
-Se o projeto Laravel utilizar migrações para criar tabelas no banco de dados, execute o seguinte comando para migrar o banco de dados:
+### 4. Executar as Migrações do Banco de Dados (se necessário)
 
+Se o projeto Laravel utiliza migrações para criar tabelas no banco de dados, execute o seguinte comando para migrar o banco de dados:
 
-Copiar código
+```
 php artisan migrate
-Iniciar o Servidor de Desenvolvimento
+```
+
+### 5. Iniciar o Servidor de Desenvolvimento
 
 Para iniciar um servidor de desenvolvimento local, execute o seguinte comando:
 
-
-Copiar código
+```
 php artisan serve
-Este comando iniciará um servidor de desenvolvimento local em http://localhost:8000.
+```
 
-Acessar o Aplicativo
+Este comando iniciará um servidor de desenvolvimento local em `http://localhost:8000`.
 
-Abra o seu navegador e acesse http://localhost:8000 para visualizar o aplicativo Laravel em execução.
+### 6. Acessar o Aplicativo
 
-Notas Adicionais
-Certifique-se de revisar o arquivo README.md do projeto para quaisquer instruções específicas adicionais fornecidas pelos desenvolvedores do projeto.
-Para configurações avançadas e personalizações, consulte a documentação oficial do Laravel.
-lua
-Copiar código
+Abra o seu navegador e acesse `http://localhost:8000` para visualizar o aplicativo Laravel em execução.
 
-Este README fornece um guia básico para configurar e iniciar um projeto Laravel após baixá-lo 
+## Notas Adicionais
+
+- Certifique-se de revisar o arquivo `README.md` do projeto para quaisquer instruções específicas adicionais fornecidas pelos desenvolvedores.
+- Para configurações avançadas e personalizações, consulte a [documentação oficial do Laravel](https://laravel.com/docs).
+```
+
+Esse guia fornece um passo a passo completo e organizado para iniciar um projeto Laravel após baixá-lo do Git.
