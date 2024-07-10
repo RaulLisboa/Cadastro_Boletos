@@ -17,18 +17,18 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 
    No diretório do projeto, execute o seguinte comando para instalar as dependências PHP do Laravel (gerenciadas pelo Composer):
 
-   ```bash
+   
    composer install
 Configuração do Arquivo de Ambiente
 
 Faça uma cópia do arquivo .env.example e renomeie-a para .env. Este arquivo contém as configurações de ambiente do seu projeto. Você pode configurar aqui seu banco de dados, cache, e-mail, etc.:
 
-bash
+
 Copiar código
 cp .env.example .env
 Após isso, gere uma nova chave de aplicativo Laravel:
 
-bash
+
 Copiar código
 php artisan key:generate
 Configuração do Banco de Dados
@@ -39,14 +39,14 @@ Executar as Migrações do Banco de Dados (se necessário)
 
 Se o projeto Laravel utilizar migrações para criar tabelas no banco de dados, execute o seguinte comando para migrar o banco de dados:
 
-bash
+
 Copiar código
 php artisan migrate
 Iniciar o Servidor de Desenvolvimento
 
 Para iniciar um servidor de desenvolvimento local, execute o seguinte comando:
 
-bash
+
 Copiar código
 php artisan serve
 Este comando iniciará um servidor de desenvolvimento local em http://localhost:8000.
