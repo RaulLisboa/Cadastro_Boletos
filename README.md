@@ -72,8 +72,5 @@ Abra o seu navegador e acesse `http://localhost:8000` para visualizar o aplicati
 
 ## Notas Adicionais
 
-- Certifique-se de revisar o arquivo `README.md` do projeto para quaisquer instruções específicas adicionais fornecidas pelos desenvolvedores.
 - Para configurações avançadas e personalizações, consulte a [documentação oficial do Laravel](https://laravel.com/docs).
 ```
-
-Esse guia agora inclui a etapa necessária para compilar os assets JavaScript e CSS, essencial para muitos projetos Laravel modernos.
