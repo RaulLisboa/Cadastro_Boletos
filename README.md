@@ -1,3 +1,6 @@
+Você está correto, normalmente, após instalar as dependências do PHP com o Composer e configurar o ambiente `.env`, pode ser necessário executar `npm run dev` ou `npm run prod` para compilar assets JavaScript e CSS, dependendo das necessidades do projeto. Aqui está o guia atualizado incluindo essa etapa:
+
+```markdown
 # Projeto Laravel - Guia de Início Rápido
 
 Este é um guia passo a passo para iniciar e configurar um projeto Laravel baixado do Git.
@@ -17,7 +20,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 
 No diretório do projeto, execute o seguinte comando para instalar as dependências PHP do Laravel (gerenciadas pelo Composer):
 
-```
+```bash
 composer install
 ```
 
@@ -25,13 +28,13 @@ composer install
 
 Faça uma cópia do arquivo `.env.example` e renomeie-a para `.env`. Este arquivo contém as configurações de ambiente do seu projeto. Você pode configurar aqui seu banco de dados, cache, e-mail, etc.:
 
-```
+```bash
 cp .env.example .env
 ```
 
 Após isso, gere uma nova chave de aplicativo Laravel:
 
-```
+```bash
 php artisan key:generate
 ```
 
@@ -43,21 +46,31 @@ Configure as credenciais do seu banco de dados no arquivo `.env`.
 
 Se o projeto Laravel utiliza migrações para criar tabelas no banco de dados, execute o seguinte comando para migrar o banco de dados:
 
-```
+```bash
 php artisan migrate
 ```
 
-### 5. Iniciar o Servidor de Desenvolvimento
+### 5. Compilar Assets JavaScript e CSS
+
+Execute o comando abaixo para compilar seus assets JavaScript e CSS:
+
+```bash
+npm run dev
+```
+
+Este comando é necessário se o seu projeto Laravel utiliza Laravel Mix para compilar assets.
+
+### 6. Iniciar o Servidor de Desenvolvimento
 
 Para iniciar um servidor de desenvolvimento local, execute o seguinte comando:
 
-```
+```bash
 php artisan serve
 ```
 
 Este comando iniciará um servidor de desenvolvimento local em `http://localhost:8000`.
 
-### 6. Acessar o Aplicativo
+### 7. Acessar o Aplicativo
 
 Abra o seu navegador e acesse `http://localhost:8000` para visualizar o aplicativo Laravel em execução.
 
@@ -67,4 +80,4 @@ Abra o seu navegador e acesse `http://localhost:8000` para visualizar o aplicati
 - Para configurações avançadas e personalizações, consulte a [documentação oficial do Laravel](https://laravel.com/docs).
 ```
 
-Esse guia fornece um passo a passo completo e organizado para iniciar um projeto Laravel após baixá-lo do Git.
+Esse guia agora inclui a etapa necessária para compilar os assets JavaScript e CSS, essencial para muitos projetos Laravel modernos.
