@@ -73,4 +73,3 @@ Abra o seu navegador e acesse `http://localhost:8000` para visualizar o aplicati
 ## Notas Adicionais
 
 - Para configurações avançadas e personalizações, consulte a [documentação oficial do Laravel](https://laravel.com/docs).
-```
